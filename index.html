@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Сантехник в Тюмени — цена до начала работ | Santehnik72</title>
+<meta name="description" content="Сантехник в Тюмени с выездом от 30 минут. Прайс на 35 услуг и калькулятор сметы. Стоимость согласуем до начала ремонта. +7 999 548-57-02">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero.webp" type="image/webp">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="header__inner">
+    <a class="logo" href="#top" aria-label="Сантехник72, на главную">Сантехник<span>72</span></a>
+    <nav class="nav" id="nav" aria-label="Разделы">
+      <a href="#price">Прайс</a>
+      <a href="#steps">Как работаем</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#areas">Районы</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <a class="header__phone" href="tel:+79995485702">+7 999 548-57-02</a>
+    <button class="burger" id="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- 1. HERO -->
+<section class="hero">
+  <div class="hero__grid">
+    <h1 class="hero__title lines">
+      <span class="line"><span data-line style="--i:0">Цена</span></span>
+      <span class="line"><span data-line style="--i:1">до работы</span></span>
+    </h1>
+    <div class="hero__left">
+      <p class="hero__lead" data-load style="--d:420ms">Сантехник в Тюмени с выездом от 30 минут. Называем стоимость на осмотре, а работу начинаем только после вашего согласия.</p>
+      <a class="btn" href="#price" data-load style="--d:520ms">Посчитать смету</a>
+      <a class="hero__call" href="tel:+79995485702" data-load style="--d:600ms">или позвонить: +7 999 548-57-02</a>
+    </div>
+    <figure class="hero__photo" data-open>
+      <img src="img/hero.webp" width="1700" height="923" alt="Сантехник с сумкой инструментов стоит у открытой двери подъезда" fetchpriority="high">
+      <figcaption class="hero__fig" data-load style="--d:760ms"><span class="hero__fig-num">12 лет</span><span>ремонтируем и монтируем сантехнику в квартирах, домах и офисах</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 2. ПОЧЕМУ НЕ ДОРОГО -->
+<section class="why" aria-labelledby="why-h">
+  <div class="why__cell">
+    <h2 class="why__title" id="why-h"><span>Дорого?</span><span>Посчитайте сами</span></h2>
+    <p class="why__text">Вилка цен по каждой из 35 услуг открыта. Выберите работы, и сумма появится до звонка мастеру.</p>
+    <a class="btn btn--ink" href="#price">К калькулятору</a>
+  </div>
+  <div class="why__rows">
+    <article class="why__row" data-reveal>
+      <h3>Цена называется до работы</h3>
+      <p>После осмотра мастер озвучивает стоимость и начинает только после вашего согласия.</p>
+      <p class="why__terms">смета на месте, ваше «да», потом работа</p>
+    </article>
+    <article class="why__row" data-reveal>
+      <h3>Выезд и осмотр бесплатно</h3>
+      <p>Если вы заказываете работы, за приезд и первичный осмотр отдельно не платите.</p>
+      <p class="why__terms">диагностика, осмотр, ориентир по цене</p>
+    </article>
+    <article class="why__row" data-reveal>
+      <h3>Прайс не прячется</h3>
+      <p>Цены «от и до» по каждой услуге: за единицу или за метр. Расходники согласуем отдельно.</p>
+      <p class="why__terms">вилка цен, за единицу, за метр</p>
+    </article>
+    <article class="why__row" data-reveal>
+      <h3>Свой инструмент, ваша сантехника</h3>
+      <p>Мастер приезжает с базовым инструментом и ставит уже купленную вами сантехнику, если она подходит.</p>
+      <p class="why__terms">свой инструмент, ваша сантехника, гарантия на работу</p>
+    </article>
+  </div>
+</section>
+
+<!-- 3. КАЛЬКУЛЯТОР / ПРАЙС -->
+<section class="est" id="price" aria-labelledby="est-h">
+  <div class="est__grid">
+    <div class="est__side">
+      <h2 class="head" id="est-h" data-lines>Смета за минуту</h2>
+      <p class="est__intro">Отметьте нужные работы. Справа цены «от и до» из нашего прайса, внизу общий ориентир.</p>
+      <div class="est__sum" id="sum" aria-live="polite">
+        <p class="est__sum-label">Ориентир по работам</p>
+        <p class="est__total"><output id="totalMin">0</output>–<output id="totalMax">0</output>&nbsp;₽</p>
+        <p class="est__sum-note" id="sumNote">Выбрано: ничего. Материалы и саму сантехнику в сумму не включаем: мастер называет точную цену на осмотре, до начала работ.</p>
+        <button type="button" class="btn" id="sendEstimate" disabled>Отправить смету мастеру</button>
+      </div>
+    </div>
+    <div class="est__list">
+        <div class="cat" data-reveal>
+          <h3 class="cat__name">Выезд и засоры</h3>
+          <div class="cat__rows">
+            <div class="row" data-min="0" data-max="1500" data-name="Выезд мастера, диагностика">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Выезд мастера, диагностика"><span class="row__name">Выезд мастера, диагностика<small>часто бесплатно при заказе работ</small></span></label>
+              <span class="row__price">0–1 500 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Выезд мастера, диагностика"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+            <div class="row" data-min="1500" data-max="3000" data-name="Засор в раковине">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Засор в раковине"><span class="row__name">Засор в раковине</span></label>
+              <span class="row__price">1 500–3 000 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Засор в раковине"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+            <div class="row" data-min="2000" data-max="4000" data-name="Засор в унитазе">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Засор в унитазе"><span class="row__name">Засор в унитазе</span></label>
+              <span class="row__price">2 000–4 000 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Засор в унитазе"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+            <div class="row" data-min="4000" data-max="7000" data-name="Прочистка стояка на этаже">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Прочистка стояка на этаже"><span class="row__name">Прочистка стояка на этаже</span></label>
+              <span class="row__price">4 000–7 000 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Прочистка стояка на этаже"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+          </div>
+        </div>
+        <div class="cat" data-reveal>
+          <h3 class="cat__name">Смесители и подводка</h3>
+          <div class="cat__rows">
+            <div class="row" data-min="1500" data-max="2500" data-name="Замена смесителя на кухне">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Замена смесителя на кухне"><span class="row__name">Замена смесителя на кухне<small>без стоимости смесителя</small></span></label>
+              <span class="row__price">1 500–2 500 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Замена смесителя на кухне"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+            <div class="row" data-min="1800" data-max="3000" data-name="Замена смесителя в ванной">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Замена смесителя в ванной"><span class="row__name">Замена смесителя в ванной</span></label>
+              <span class="row__price">1 800–3 000 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Замена смесителя в ванной"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+            <div class="row" data-min="1200" data-max="2200" data-name="Установка нового смесителя на раковину">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Установка нового смесителя на раковину"><span class="row__name">Установка нового смесителя на раковину</span></label>
+              <span class="row__price">1 200–2 200 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Установка нового смесителя на раковину"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+            <div class="row" data-min="800" data-max="1500" data-name="Замена гибкой подводки, пара">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Замена гибкой подводки, пара"><span class="row__name">Замена гибкой подводки, пара</span></label>
+              <span class="row__price">800–1 500 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Замена гибкой подводки, пара"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+            <div class="row" data-min="1000" data-max="2000" data-name="Замена прокладки или картриджа">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Замена прокладки или картриджа"><span class="row__name">Замена прокладки или картриджа</span></label>
+              <span class="row__price">1 000–2 000 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Замена прокладки или картриджа"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+          </div>
+        </div>
+        <div class="cat" data-reveal>
+          <h3 class="cat__name">Течи, сифоны, бачок</h3>
+          <div class="cat__rows">
+            <div class="row" data-min="1000" data-max="1800" data-name="Замена сифона под раковиной">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Замена сифона под раковиной"><span class="row__name">Замена сифона под раковиной</span></label>
+              <span class="row__price">1 000–1 800 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Замена сифона под раковиной"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+            <div class="row" data-min="1200" data-max="2000" data-name="Замена сифона под ванной">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Замена сифона под ванной"><span class="row__name">Замена сифона под ванной</span></label>
+              <span class="row__price">1 200–2 000 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Замена сифона под ванной"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+            <div class="row" data-min="1500" data-max="3000" data-name="Устранение течи в соединении труб">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Устранение течи в соединении труб"><span class="row__name">Устранение течи в соединении труб</span></label>
+              <span class="row__price">1 500–3 000 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Устранение течи в соединении труб"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+            <div class="row" data-min="1500" data-max="2500" data-name="Ремонт бачка, замена арматуры">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Ремонт бачка, замена арматуры"><span class="row__name">Ремонт бачка, замена арматуры</span></label>
+              <span class="row__price">1 500–2 500 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Ремонт бачка, замена арматуры"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+          </div>
+        </div>
+        <div class="cat" data-reveal>
+          <h3 class="cat__name">Установка сантехники</h3>
+          <div class="cat__rows">
+            <div class="row" data-min="3000" data-max="5000" data-name="Унитаз на готовое основание">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Унитаз на готовое основание"><span class="row__name">Унитаз на готовое основание</span></label>
+              <span class="row__price">3 000–5 000 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Унитаз на готовое основание"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+            <div class="row" data-min="8000" data-max="12000" data-name="Подвесной унитаз с инсталляцией">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Подвесной унитаз с инсталляцией"><span class="row__name">Подвесной унитаз с инсталляцией</span></label>
+              <span class="row__price">8 000–12 000 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Подвесной унитаз с инсталляцией"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+            <div class="row" data-min="2500" data-max="4000" data-name="Раковина с пьедесталом">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Раковина с пьедесталом"><span class="row__name">Раковина с пьедесталом</span></label>
+              <span class="row__price">2 500–4 000 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Раковина с пьедесталом"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+            <div class="row" data-min="2000" data-max="3500" data-name="Раковина на кронштейнах">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Раковина на кронштейнах"><span class="row__name">Раковина на кронштейнах</span></label>
+              <span class="row__price">2 000–3 500 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Раковина на кронштейнах"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+            <div class="row" data-min="4000" data-max="6000" data-name="Ванна акриловая или стальная">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Ванна акриловая или стальная"><span class="row__name">Ванна акриловая или стальная</span></label>
+              <span class="row__price">4 000–6 000 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Ванна акриловая или стальная"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+            <div class="row" data-min="6000" data-max="9000" data-name="Чугунная ванна">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Чугунная ванна"><span class="row__name">Чугунная ванна</span></label>
+              <span class="row__price">6 000–9 000 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Чугунная ванна"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+            <div class="row" data-min="4000" data-max="7000" data-name="Полотенцесушитель водяной">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Полотенцесушитель водяной"><span class="row__name">Полотенцесушитель водяной</span></label>
+              <span class="row__price">4 000–7 000 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Полотенцесушитель водяной"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+            <div class="row" data-min="1500" data-max="4000" data-name="Демонтаж старой сантехники, за единицу">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Демонтаж старой сантехники"><span class="row__name">Демонтаж старой сантехники<small>за единицу</small></span></label>
+              <span class="row__price">1 500–4 000 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Демонтаж старой сантехники"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+          </div>
+        </div>
+        <div class="cat" data-reveal>
+          <h3 class="cat__name">Техника, счётчики, фильтры</h3>
+          <div class="cat__rows">
+            <div class="row" data-min="2000" data-max="3500" data-name="Стиральная машина к готовым коммуникациям">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Стиральная машина к готовым коммуникациям"><span class="row__name">Стиральная машина к готовым коммуникациям</span></label>
+              <span class="row__price">2 000–3 500 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Стиральная машина к готовым коммуникациям"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+            <div class="row" data-min="3500" data-max="5500" data-name="Стиральная машина с прокладкой труб">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Стиральная машина с прокладкой труб"><span class="row__name">Стиральная машина с прокладкой труб</span></label>
+              <span class="row__price">3 500–5 500 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Стиральная машина с прокладкой труб"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+            <div class="row" data-min="2000" data-max="3500" data-name="Установка счётчика воды">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Установка счётчика воды"><span class="row__name">Установка счётчика воды</span></label>
+              <span class="row__price">2 000–3 500 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Установка счётчика воды"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+            <div class="row" data-min="1500" data-max="2500" data-name="Замена счётчика воды">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Замена счётчика воды"><span class="row__name">Замена счётчика воды</span></label>
+              <span class="row__price">1 500–2 500 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Замена счётчика воды"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+            <div class="row" data-min="4000" data-max="7000" data-name="Накопительный водонагреватель">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Накопительный водонагреватель"><span class="row__name">Накопительный водонагреватель</span></label>
+              <span class="row__price">4 000–7 000 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Накопительный водонагреватель"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+            <div class="row" data-min="3500" data-max="6000" data-name="Проточный водонагреватель">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Проточный водонагреватель"><span class="row__name">Проточный водонагреватель</span></label>
+              <span class="row__price">3 500–6 000 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Проточный водонагреватель"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+            <div class="row" data-min="1500" data-max="2500" data-name="Фильтр грубой очистки">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Фильтр грубой очистки"><span class="row__name">Фильтр грубой очистки</span></label>
+              <span class="row__price">1 500–2 500 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Фильтр грубой очистки"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+            <div class="row" data-min="5000" data-max="9000" data-name="Многоступенчатая система фильтрации">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Многоступенчатая система фильтрации"><span class="row__name">Многоступенчатая система фильтрации</span></label>
+              <span class="row__price">5 000–9 000 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Многоступенчатая система фильтрации"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+          </div>
+        </div>
+        <div class="cat" data-reveal>
+          <h3 class="cat__name">Трубы и канализация</h3>
+          <div class="cat__rows">
+            <div class="row" data-min="500" data-max="800" data-name="Разводка труб ХВС и ГВС, за метр">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Разводка труб ХВС и ГВС"><span class="row__name">Разводка труб ХВС и ГВС<small>за метр</small></span></label>
+              <span class="row__price">500–800 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Разводка труб ХВС и ГВС"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+            <div class="row" data-min="450" data-max="750" data-name="Разводка канализации, за метр">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Разводка канализации"><span class="row__name">Разводка канализации<small>за метр</small></span></label>
+              <span class="row__price">450–750 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Разводка канализации"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+            <div class="row" data-min="3000" data-max="5000" data-name="Замена участка канализации до 1 м">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Замена участка канализации до 1 м"><span class="row__name">Замена участка канализации до 1 м</span></label>
+              <span class="row__price">3 000–5 000 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Замена участка канализации до 1 м"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+            <div class="row" data-min="12000" data-max="20000" data-name="Замена стояка ХВС и ГВС в квартире">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Замена стояка ХВС и ГВС в квартире"><span class="row__name">Замена стояка ХВС и ГВС в квартире<small>с учётом согласования и материалов</small></span></label>
+              <span class="row__price">12 000–20 000 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Замена стояка ХВС и ГВС в квартире"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+            <div class="row" data-min="500" data-max="1000" data-name="Герметизация стыков и швов в санузле, за метр">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Герметизация стыков и швов в санузле"><span class="row__name">Герметизация стыков и швов в санузле<small>за метр</small></span></label>
+              <span class="row__price">500–1 000 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Герметизация стыков и швов в санузле"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+            <div class="row" data-min="3000" data-max="5000" data-name="Проверка и опрессовка водоснабжения">
+              <label class="row__pick"><input type="checkbox" class="row__check" aria-label="Добавить в смету: Проверка и опрессовка водоснабжения"><span class="row__name">Проверка и опрессовка водоснабжения</span></label>
+              <span class="row__price">3 000–5 000 ₽</span>
+              <span class="row__qty" role="group" aria-label="Количество: Проверка и опрессовка водоснабжения"><button type="button" class="qty__btn" data-d="-1" aria-label="Меньше">−</button><output class="qty__val">1</output><button type="button" class="qty__btn" data-d="1" aria-label="Больше">+</button></span>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 4. КАК ПРОХОДИТ ВЫЗОВ -->
+<section class="steps" id="steps" aria-labelledby="steps-h">
+  <h2 class="head" id="steps-h" data-lines>Как проходит вызов</h2>
+  <div class="bar" data-ui data-bar>
+    <div class="bar__seg bar__seg--1" style="--g:1.2">
+      <p class="bar__time">5–10 минут</p>
+      <p class="bar__txt"><b>Сначала</b> вы описываете проблему, мы перезваниваем и подбираем ближайшее окно.</p>
+    </div>
+    <div class="bar__seg bar__seg--2" style="--g:3">
+      <p class="bar__time">30–90 минут</p>
+      <p class="bar__txt"><b>Затем</b> мастер приезжает с инструментом: обычный ориентир по городу. Срочные протечки лучше обсуждать по телефону.</p>
+    </div>
+    <div class="bar__seg bar__seg--3" style="--g:1.5">
+      <p class="bar__time">До работ</p>
+      <p class="bar__txt"><b>Осмотр</b> и честная цена: начинаем только после вашего согласия.</p>
+    </div>
+    <div class="bar__seg bar__seg--4" style="--g:2.4">
+      <p class="bar__time">В тот же визит</p>
+      <p class="bar__txt"><b>В конце</b> проверяем воду, слив и герметичность. На выполненную услугу даём гарантию.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 5. ЧТО ДЕЛАЕМ: мозаика -->
+<section class="mosaic" aria-labelledby="mos-h">
+  <h2 class="mosaic__head" id="mos-h">Что мы делаем</h2>
+  <p class="mosaic__statement" data-fill>Мастер приезжает с инструментом, называет цену и начинает работу только после вашего «да».</p>
+  <div class="mosaic__grid">
+    <figure class="tile tile--photo"><img src="img/leak.webp" width="800" height="800" alt="Мастер разводным ключом затягивает сифон под раковиной" loading="lazy"><figcaption>Течи и сифоны</figcaption></figure>
+    <div class="tile tile--sage"><p class="tile__num"><span data-roll>35</span></p><p>услуг в прайсе, у каждой цена «от и до»</p></div>
+    <figure class="tile tile--photo"><img src="img/faucet.webp" width="800" height="800" alt="Установка смесителя на кухне" loading="lazy"><figcaption>Смесители и краны</figcaption></figure>
+    <div class="tile tile--amber"><p class="tile__num"><span data-roll>30</span><small>мин</small></p><p>выезд от 30 минут при свободном окне</p></div>
+    <div class="tile tile--orange"><p class="tile__num"><span data-roll>5,0</span></p><p>оценка по отзывам на Авито</p></div>
+    <figure class="tile tile--photo"><img src="img/washer.webp" width="800" height="800" alt="Подключение стиральной машины к воде и канализации" loading="lazy"><figcaption>Подключение техники</figcaption></figure>
+    <figure class="tile tile--photo"><img src="img/pipes.webp" width="800" height="800" alt="Разводка труб водоснабжения в санузле" loading="lazy"><figcaption>Трубы и разводка</figcaption></figure>
+    <div class="tile tile--surface"><p class="tile__num"><span data-roll>12</span><small>лет</small></p><p>опыта в ремонте и монтаже сантехники</p></div>
+  </div>
+</section>
+
+<!-- 6. ОТЗЫВЫ -->
+<section class="reviews" id="reviews" aria-labelledby="rev-h">
+  <div class="reviews__top">
+    <h2 class="head" id="rev-h" data-lines>Отзывы с Авито</h2>
+    <p class="reviews__lead">Живые скриншоты: как быстро приехал мастер, что сделал и остался ли клиент доволен. Листайте вбок.</p>
+  </div>
+  <ul class="reviews__track" tabindex="0" aria-label="Скриншоты отзывов">
+    <li><img src="img/review-01.webp" width="560" height="1212" alt="Скриншот отзывов на Авито: пятёрки и ответы мастера"></li>
+    <li><img src="img/review-02.webp" width="560" height="1212" alt="Скриншот отзывов на Авито: клиенты благодарят за оперативность"></li>
+    <li><img src="img/review-03.webp" width="560" height="1212" alt="Скриншот отзывов на Авито о работе сантехника" loading="lazy"></li>
+    <li><img src="img/review-04.webp" width="560" height="1212" alt="Скриншот отзывов на Авито о работе сантехника" loading="lazy"></li>
+    <li><img src="img/review-05.webp" width="560" height="1212" alt="Скриншот отзывов на Авито о работе сантехника" loading="lazy"></li>
+    <li><img src="img/review-06.webp" width="560" height="1212" alt="Скриншот отзывов на Авито о работе сантехника" loading="lazy"></li>
+    <li><img src="img/review-07.webp" width="560" height="1212" alt="Скриншот отзывов на Авито о работе сантехника" loading="lazy"></li>
+  </ul>
+</section>
+
+<!-- 7. РАЙОНЫ -->
+<section class="areas" id="areas" aria-labelledby="areas-h">
+  <div class="areas__head">
+    <h2 class="areas__title" id="areas-h" data-lines>Куда выезжаем</h2>
+    <p class="areas__note">По Тюмени обычный ориентир 30–90 минут. Условия выезда уточняем заранее.</p>
+  </div>
+  <div class="areas__cols" data-reveal>
+    <ul>
+      <li class="soft">По Тюмени</li>
+      <li>Центр</li><li>Дом Обороны</li><li>Мыс</li><li>Войновка</li><li>Восточный</li>
+    </ul>
+    <ul>
+      <li class="soft">&nbsp;</li>
+      <li>Заречные</li><li>МЖК</li><li>Тюменский</li><li>Южный</li><li>Антипино</li>
+    </ul>
+    <ul>
+      <li class="soft">Рядом с городом</li>
+      <li>Плеханово</li><li>Березняки</li><li>Московский</li><li>Боровский</li><li>Матмасы</li><li>Комарово</li>
+    </ul>
+    <ul>
+      <li class="soft">Другое</li>
+      <li>Другие адреса по согласованию</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 8. FAQ -->
+<section class="faq" id="faq" aria-labelledby="faq-h">
+  <div class="faq__band faq__band--head"><h2 id="faq-h" data-lines>Вопросы</h2></div>
+  <div class="faq__band"><h3>Из чего складывается цена?</h3><p>Из вида работы, состояния сантехники и материалов. В калькуляторе выше вилка «от и до» по каждой услуге, а точную сумму мастер называет на осмотре до начала ремонта. Расходные материалы согласуются отдельно.</p></div>
+  <div class="faq__band"><h3>Выезд мастера платный?</h3><p>Диагностика в прайсе стоит от 0 до 1 500 ₽, а при заказе работ первичный осмотр и выезд бесплатные. Если задача нестандартная, мастер скажет об этом сразу.</p></div>
+  <div class="faq__band"><h3>Можно вызвать сантехника сегодня?</h3><p>Да, при свободном окне мастер может приехать в день обращения. Срочные протечки и засоры лучше согласовывать по телефону.</p></div>
+  <div class="faq__band"><h3>Мастер приезжает со своим инструментом?</h3><p>Да, базовый инструмент у мастера с собой. Расходные материалы согласуются отдельно.</p></div>
+  <div class="faq__band"><h3>Можно поставить уже купленную сантехнику?</h3><p>Да, мастер установит вашу сантехнику, если она подходит по размерам, подключению и комплектации.</p></div>
+  <div class="faq__band"><h3>Есть ли гарантия?</h3><p>На выполненную услугу даём гарантию. Условия зависят от вида работы, состояния сантехники и установленных материалов, их мастер называет вместе со сметой.</p></div>
+</section>
+
+<!-- 9. КОНТАКТ + ФОРМА -->
+<section class="contact" id="contact" aria-labelledby="contact-h">
+  <div class="contact__grid">
+    <div class="contact__left">
+      <h2 class="contact__title" id="contact-h" data-lines>Нужен сантехник в Тюмени?</h2>
+      <p class="contact__text">Если течёт вода, быстрее всего позвонить. Плановую работу можно описать в форме или написать в MAX и WhatsApp с фото.</p>
+      <p class="contact__links">
+        <a href="tel:+79995485702">+7 999 548-57-02</a>
+        <a href="https://wa.me/79995485702" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://max.ru/u/f9LHodD0cOJCIznxuVm9bfao0KplnugRxkuT4KhsoYIxJk2JsMzFETMhEVc" target="_blank" rel="noopener">MAX</a>
+      </p>
+      <p class="contact__soft">Ежедневно с 08:00 до 22:00. Тюмень и ближайшие населённые пункты.</p>
+    </div>
+    <form class="form" id="leadForm" novalidate>
+      <p class="form__lead">Оставьте номер, мастер перезвонит за 5–10 минут и назовёт ориентир по цене до приезда.</p>
+      <label class="field"><span>Как вас зовут</span><input type="text" name="name" autocomplete="name" required></label>
+      <label class="field"><span>Телефон</span><input type="tel" name="phone" autocomplete="tel" inputmode="tel" placeholder="+7" required></label>
+      <label class="field"><span>Что случилось или что нужно сделать</span><textarea name="comment" rows="4" placeholder="Район, что течёт или что нужно установить"></textarea></label>
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+      <label class="check"><input type="checkbox" name="agree" required><span>Даю согласие на обработку персональных данных и принимаю <a href="privacy.html">политику конфиденциальности</a></span></label>
+      <button class="btn" type="submit">Жду звонка</button>
+      <p class="form__status" id="formStatus" role="status"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p class="footer__mark" aria-hidden="true">Сантехник72</p>
+  <div class="footer__row">
+    <p>Выездные сантехнические работы в квартирах, домах и офисах Тюмени.</p>
+    <p><a href="privacy.html">Политика конфиденциальности</a></p>
+    <p><a href="tel:+79995485702">+7 999 548-57-02</a><br>Тюмень, ежедневно 08:00–22:00</p>
+    <p>© <span id="year">2026</span> Santehnik72.pro</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
