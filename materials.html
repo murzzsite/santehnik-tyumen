@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Материалы проекта | Сантехник72</title>
+<meta name="description" content="Рабочие материалы по продвижению Сантехник72">
+<meta name="robots" content="noindex">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="materials.css?v=1">
+</head>
+<body>
+<div class="bar"><div class="bar__in">
+  <a class="back" href="index.html">← На сайт</a>
+  <div class="bar__act"></div>
+</div></div>
+<div class="wrap">
+<section class="hero"><h1>Материалы под ваш оффер</h1><p class="lead">Всё собрано по вашему брифу и ценам с сайта. Страницы закрыты от поисковиков и открываются по ссылке.</p></section>
+<section class="sec"><div class="grid3">
+<a class="hubcard" href="raspakovka.html"><div><h3>Распаковка</h3><p>Финансовая модель, портреты клиентов, позиционирование, отстройка, дорожная карта.</p></div><span>Открыть →</span></a>
+<a class="hubcard" href="recommendations.html"><div><h3>Рекомендации</h3><p>Что делать по порядку, чтобы заявок стало на 40% больше, и как это измерять.</p></div><span>Открыть →</span></a>
+<a class="hubcard" href="scripts.html"><div><h3>Скрипты продаж</h3><p>Что говорить по телефону и в мессенджере: цена, «дорого», «я подумаю», срочная течь.</p></div><span>Открыть →</span></a>
+<a class="hubcard" href="presentation.html"><div><h3>Презентация и прайс</h3><p>Оформленный прайс для клиента: можно отправить ссылкой или сохранить в PDF.</p></div><span>Открыть →</span></a>
+<a class="hubcard" href="outreach.html"><div><h3>Аутрич</h3><p>Как писать первыми: УК, ТСЖ, риелторам, дизайнерам и ремонтным бригадам.</p></div><span>Открыть →</span></a>
+<a class="hubcard" href="cards.html"><div><h3>Карточки на картах</h3><p>Готовые тексты для Яндекс Бизнеса, 2ГИС и Google.</p></div><span>Открыть →</span></a>
+<a class="hubcard" href="reviews.html"><div><h3>Отзывы</h3><p>Плакат с QR, просьба об отзыве и 10 готовых ответов на отзывы.</p></div><span>Открыть →</span></a>
+<a class="hubcard" href="channels.html"><div><h3>Карта каналов</h3><p>Где найти заказчиков в Тюмени, кроме поиска, и как считать размещения.</p></div><span>Открыть →</span></a>
+<a class="hubcard" href="report/"><div><h3>Страница проекта</h3><p>Что сделано, что дальше и ежемесячный отчёт с цифрами.</p></div><span>Открыть →</span></a>
+</div></section>
+</div>
+<div class="foot">Сантехник72 · +7 999 548-57-02 · Тюмень</div>
+<script>
+(() => { const els = document.querySelectorAll('.sec, .card, .kpi'); if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+els.forEach(e => e.classList.add('reveal-up'));
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' });
+els.forEach(e => io.observe(e)); setTimeout(() => els.forEach(e => e.classList.add('is-in')), 2500); })();
+</script>
+</body>
+</html>

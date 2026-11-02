@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Карта каналов | Сантехник72</title>
+<meta name="description" content="Где искать заказчиков сантехнику в Тюмени, кроме поиска">
+<meta name="robots" content="noindex">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="materials.css?v=1">
+</head>
+<body>
+<div class="bar"><div class="bar__in">
+  <a class="back" href="materials.html">← Все материалы</a>
+  <div class="bar__act"><button class="btn btn--ink" onclick="window.print()">Сохранить в PDF</button></div>
+</div></div>
+<div class="wrap">
+<section class="hero"><h1>Карта каналов: где искать заказчиков в Тюмени</h1><p class="lead">Для сантехника лучше всего работают местные каналы: карты, Авито, городские сообщества. Этот документ — методика и калькулятор, список конкретных сообществ дозаполняется после доступа к аналитике.</p><nav class="toc"><a href="#m">Методика</a><a href="#list">Типы каналов</a><a href="#calc">Калькулятор</a><a href="#plan">Первая волна</a></nav></section>
+<section class="sec" id="m"><h2>Как выбирать канал</h2><div class="grid3">
+<div class="card"><h3>1. Местная аудитория</h3><p>Нужны жители Тюмени. Охват по России бесполезен: сантехник выезжает только в город.</p></div>
+<div class="card card--sage"><h3>2. Живая активность</h3><p>Смотрите на комментарии и реакции, а не только на число подписчиков. Накрученные сообщества дают пустые заявки.</p></div>
+<div class="card card--amber"><h3>3. Цена заявки</h3><p>Считайте не цену размещения, а цену заявки: размещение ÷ число заявок. Запускайте малыми тестами.</p></div></div></section>
+<section class="sec" id="list"><h2>Типы каналов для сантехника</h2><div class="card"><div class="tblw"><table class="tbl"><tr><th>Канал</th><th>Как работает</th><th>Комментарий</th></tr><tr><td data-l="Канал">Карты</td><td data-l="Как работает">Карточки Яндекса, 2ГИС, Google</td><td data-l="Комментарий">Самый тёплый спрос, делаем в первую очередь</td></tr><tr><td data-l="Канал">Авито</td><td data-l="Как работает">Объявления и отзывы</td><td data-l="Комментарий">Уже есть отзывы, добавить ссылку на сайт</td></tr><tr><td data-l="Канал">Городские сообщества ВКонтакте и Telegram</td><td data-l="Как работает">Пост или реклама в сообществах Тюмени</td><td data-l="Комментарий">Нужно подтверждать охват и живую аудиторию</td></tr><tr><td data-l="Канал">Чаты домов и ЖК</td><td data-l="Как работает">Рекомендация жителям с разрешения админа</td><td data-l="Комментарий">Не спамить, только с согласия администратора</td></tr><tr><td data-l="Канал">Партнёры</td><td data-l="Как работает">УК, риелторы, дизайнеры, магазины</td><td data-l="Комментарий">См. раздел «Аутрич»</td></tr></table></div>
+<p class="note">Список конкретных сообществ Тюмени мы не собрали: сервисы аналитики (TGStat, Telemetr) требуют платный доступ или блокируют автоматический сбор, а выдумывать названия мы не будем. Список дозаполняется после доступа.</p></div></section>
+<section class="sec" id="calc"><h2>Калькулятор размещения</h2><div class="card"><div class="grid2">
+<label>Бюджет размещения, ₽<br><input id="c-b" type="number" value="3000" min="0" style="width:100%;font:inherit;padding:10px;border:0;background:#fff"></label>
+<label>Цена за 1000 показов (CPM), ₽<br><input id="c-cpm" type="number" value="300" min="1" style="width:100%;font:inherit;padding:10px;border:0;background:#fff"></label>
+<label>Доля, кто перешёл (CTR), %<br><input id="c-ctr" type="number" value="1" step="0.1" min="0" style="width:100%;font:inherit;padding:10px;border:0;background:#fff"></label>
+<label>Доля перешедших, оставивших заявку, %<br><input id="c-cr" type="number" value="5" step="0.5" min="0" style="width:100%;font:inherit;padding:10px;border:0;background:#fff"></label></div>
+<p style="margin-top:16px"><b>Показы:</b> <span id="o-i">0</span> · <b>Переходы:</b> <span id="o-c">0</span> · <b>Заявки:</b> <span id="o-l">0</span> · <b>Цена заявки:</b> <span id="o-p">—</span></p>
+<p class="note">Исходные цифры в калькуляторе условные <span class="draft">допущение</span>. Подставьте свои после первого теста. Размещения оплачиваете вы, результат не гарантируется.</p></div>
+<script>(()=>{const g=i=>+document.getElementById(i).value||0;const f=n=>Math.round(n).toLocaleString('ru-RU');const r=()=>{const b=g('c-b'),cpm=g('c-cpm')||1,ctr=g('c-ctr')/100,cr=g('c-cr')/100;const imp=b/cpm*1000,cl=imp*ctr,l=cl*cr;o('o-i',f(imp));o('o-c',f(cl));o('o-l',l.toFixed(1));o('o-p',l>0?f(b/l)+' ₽':'—');};const o=(i,v)=>document.getElementById(i).textContent=v;['c-b','c-cpm','c-ctr','c-cr'].forEach(i=>document.getElementById(i).addEventListener('input',r));r();})();</script></section>
+<section class="sec" id="plan"><h2>Первая волна за 4 недели</h2><div class="card"><div class="tblw"><table class="tbl"><tr><th>Неделя</th><th>Что делаем</th><th>Результат</th></tr><tr><td data-l="Неделя">1</td><td data-l="Что делаем">Карточки на картах, ссылка на сайт в Авито</td><td data-l="Результат">Базовая видимость</td></tr><tr><td data-l="Неделя">2</td><td data-l="Что делаем">Письма партнёрам из «Аутрича» (по 5 адресатов)</td><td data-l="Результат">Первые ответы</td></tr><tr><td data-l="Неделя">3</td><td data-l="Что делаем">Тест одного городского сообщества на малый бюджет</td><td data-l="Результат">Цена заявки</td></tr><tr><td data-l="Неделя">4</td><td data-l="Что делаем">Сравнение каналов и решение, куда вкладывать</td><td data-l="Результат">План на следующий месяц</td></tr></table></div></div></section>
+</div>
+<div class="foot">Сантехник72 · +7 999 548-57-02 · Тюмень</div>
+<script>
+(() => { const els = document.querySelectorAll('.sec, .card, .kpi'); if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+els.forEach(e => e.classList.add('reveal-up'));
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' });
+els.forEach(e => io.observe(e)); setTimeout(() => els.forEach(e => e.classList.add('is-in')), 2500); })();
+</script>
+</body>
+</html>

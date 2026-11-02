@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Страница проекта | Сантехник72</title>
+<meta name="description" content="Что сделано, что дальше и ежемесячный отчёт по проекту Сантехник72">
+<meta name="robots" content="noindex">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../materials.css?v=1">
+</head>
+<body>
+<div class="bar"><div class="bar__in">
+  <a class="back" href="../materials.html">← Все материалы</a>
+  <div class="bar__act"><button class="btn btn--ink" onclick="window.print()">Сохранить в PDF</button></div>
+</div></div>
+<div class="wrap">
+<section class="hero"><h1>Страница проекта</h1><p class="lead">Здесь собрано, что уже сделано, что в работе и какие цифры мы смотрим раз в месяц.</p><nav class="toc"><a href="#done">Сделано</a><a href="#next">Дальше</a><a href="#rep">Отчёт месяца</a></nav></section>
+<section class="sec" id="done"><h2>Сделано</h2><div class="grid2">
+<div class="card card--sage"><h3>Этап 1: сайт</h3><ul><li>Сайт на домене santex.tech с защищённым соединением.</li><li>Семь страниц услуг, согласие и политика, cookie-уведомление.</li><li>Разметка для поисковиков, sitemap и robots.</li><li>Блог и первая статья (ждёт вашей кнопки «Опубликовать»).</li></ul></div>
+<div class="card"><h3>Этап 2: материалы</h3><ul><li><a href="../raspakovka.html">Распаковка</a> и <a href="../recommendations.html">Рекомендации</a>.</li><li><a href="../cards.html">Карточки на картах</a> и <a href="../reviews.html">Отзывы</a>.</li><li><a href="../channels.html">Карта каналов</a>.</li><li><a href="../scripts.html">Скрипты</a>, <a href="../presentation.html">презентация</a>, <a href="../outreach.html">аутрич</a>.</li></ul></div></div></section>
+<section class="sec" id="next"><h2>Дальше</h2><div class="card"><div class="tblw"><table class="tbl"><tr><th>Что</th><th>Кто</th><th>Когда</th></tr><tr><td data-l="Что">Подтвердить сайт в Яндекс Вебмастере и Google Search Console, создать счётчик Метрики</td><td data-l="Кто">Вы по инструкции, мы ставим на сайт</td><td data-l="Когда">На этой неделе</td></tr><tr><td data-l="Что">Заполнить карточки на картах по готовым текстам</td><td data-l="Кто">Вы, мы подсказываем</td><td data-l="Когда">Неделя 1–2</td></tr><tr><td data-l="Что">Опубликовать статью в боте</td><td data-l="Кто">Вы, одна кнопка</td><td data-l="Когда">По графику: раз в неделю</td></tr><tr><td data-l="Что">Первые письма партнёрам</td><td data-l="Кто">Вы</td><td data-l="Когда">Неделя 3</td></tr><tr><td data-l="Что">Первый отчёт с цифрами</td><td data-l="Кто">Мы</td><td data-l="Когда">Через месяц</td></tr></table></div></div></section>
+<section class="sec" id="rep"><h2>Отчёт: ноябрь 2026</h2>
+<div class="grid3"><div class="kpi"><p>Заявок в базе</p><span class="big">—</span><p>фиксируем за последний полный месяц</p></div><div class="kpi"><p>Цель +40%</p><span class="big">—</span><p>база × 1,4</p></div><div class="kpi"><p>Факт</p><span class="big">—</span><p>заполним по итогам месяца</p></div></div>
+<div class="card" style="margin-top:6px"><h3>Честно о сроках</h3><p>Первые заходы из поиска обычно появляются через 3–6 недель, выход в топ-10 по средним запросам занимает 2–4 месяца при регулярной работе. Гарантировать позиции и число заявок нельзя. Страницу мы обновляем раз в месяц.</p></div></section>
+</div>
+<div class="foot">Сантехник72 · +7 999 548-57-02 · Тюмень</div>
+<script>
+(() => { const els = document.querySelectorAll('.sec, .card, .kpi'); if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+els.forEach(e => e.classList.add('reveal-up'));
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' });
+els.forEach(e => io.observe(e)); setTimeout(() => els.forEach(e => e.classList.add('is-in')), 2500); })();
+</script>
+</body>
+</html>

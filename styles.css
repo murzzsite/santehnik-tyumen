@@ -375,3 +375,6 @@ button, input, textarea { font: inherit; color: inherit; }
   .svc__list { grid-template-columns: 1fr; }
   .cookie { flex-direction: column; align-items: stretch; left: 12px; right: 12px; }
 }
+.svc__pic { margin: var(--section) var(--margin) 0; height: min(52vh, 520px); overflow: clip; background: var(--surface); }
+.svc__pic img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
+@media (max-width: 900px) { .svc__pic { margin-top: 56px; height: 240px; } }
