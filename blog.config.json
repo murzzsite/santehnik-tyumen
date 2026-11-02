@@ -1,0 +1,47 @@
+{
+  "siteName": "Сантехник72",
+  "siteUrl": "https://santex.tech",
+  "lang": "ru",
+  "repo": "murzzsite/santehnik-tyumen",
+  "ref": "DWK7UWQMTC",
+  "workerUrl": "https://lead-relay.leestygpt.workers.dev",
+  "blogTitle": "Блог",
+  "blogDescription": "Практические статьи о ремонте и установке сантехники в Тюмени: цены, выбор, как не переплатить",
+  "homeTitle": "Полезные статьи о сантехнике",
+  "author": {
+    "name": "Сантехник72",
+    "jobTitle": "",
+    "type": "Organization"
+  },
+  "ctaTitle": "Нужен сантехник в Тюмени?",
+  "ctaText": "Оставьте номер: мастер перезвонит за 5–10 минут и назовёт ориентир по цене до приезда.",
+  "ctaButton": "Оставить заявку",
+  "ctaUrl": "/#contact",
+  "disclaimer": "",
+  "telegramNotify": true,
+  "cadenceDays": 7,
+  "homeLatest": 3,
+  "staticPages": [
+    "/",
+    "/services.html",
+    "/prochistka-zasorov.html",
+    "/zamena-smesitelya.html",
+    "/ustanovka-unitaza.html",
+    "/podklyuchenie-stiralnoy-mashiny.html",
+    "/ustanovka-vodonagrevatelya.html",
+    "/razvodka-trub-kanalizacii.html",
+    "/ustranenie-protechek.html",
+    "/privacy.html",
+    "/consent.html"
+  ],
+  "indexNowKey": "20f1f9b106a3cdb977413bf727013c7c",
+  "previewSecret": "e991e0c93b37f05a",
+  "theme": {
+    "accent": "var(--accent)",
+    "bg": "var(--bg)",
+    "surface": "var(--surface)",
+    "ink": "var(--ink)",
+    "soft": "var(--muted)",
+    "accent-soft": "color-mix(in srgb, var(--accent) 10%, #ffffff)"
+  }
+}
