@@ -1,16 +1,14 @@
 {
   "site": "https://santex.tech",
   "updated": "2026-11-02",
-  "awaiting": [
+  "awaiting": [],
+  "scheduled": [],
+  "published": [
     {
       "slug": "skolko-stoit-vyzvat-santehnika-v-tyumeni",
-      "path": "articles/skolko-stoit-vyzvat-santehnika-v-tyumeni.md",
       "title": "Сколько стоит вызвать сантехника в Тюмени и как не переплатить",
-      "description": "Сколько стоит вызвать сантехника в Тюмени: цены на засор, смеситель, унитаз, ванну и разводку труб, от чего зависит сумма и как не переплатить.",
-      "reading_time": "7 мин чтения",
-      "preview_url": "https://santex.tech/blog/preview/a3984a884193/skolko-stoit-vyzvat-santehnika-v-tyumeni/"
+      "url": "https://santex.tech/blog/skolko-stoit-vyzvat-santehnika-v-tyumeni/",
+      "date": "2026-11-02"
     }
-  ],
-  "scheduled": [],
-  "published": []
+  ]
 }
