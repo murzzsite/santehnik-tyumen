@@ -1,3 +1,4 @@
+const YM_ID = 0; // номер счётчика Яндекс Метрики: вставить после создания счётчика
 const LEAD_ENDPOINT = 'https://lead-relay.leestygpt.workers.dev/lead/DWK7UWQMTC';
 
 (() => {
@@ -7,6 +8,16 @@ const LEAD_ENDPOINT = 'https://lead-relay.leestygpt.workers.dev/lead/DWK7UWQMTC'
 
   const yearEl = $('#year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  /* ---------- cookie + Метрика ---------- */
+  const cookie = $('#cookie');
+  let seen = false; try { seen = localStorage.getItem('cookie-ok') === '1'; } catch (e) {}
+  if (cookie && !seen) cookie.hidden = false;
+  $('#cookieOk')?.addEventListener('click', () => { cookie.hidden = true; try { localStorage.setItem('cookie-ok', '1'); } catch (e) {} });
+  if (YM_ID) {
+    (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments); }; m[i].l = 1 * new Date(); k = e.createElement(t); a = e.getElementsByTagName(t)[0]; k.async = 1; k.src = r; a.parentNode.insertBefore(k, a); })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
+    window.ym(YM_ID, 'init', { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: false });
+  }
 
   /* ---------- header, burger, smooth anchors ---------- */
   const burger = $('#burger'), nav = $('#nav');
@@ -183,7 +194,7 @@ const LEAD_ENDPOINT = 'https://lead-relay.leestygpt.workers.dev/lead/DWK7UWQMTC'
     return 'Смета с сайта:\n' + sel.map(s => `- ${s.name} × ${s.qty}: ${fmt(s.min * s.qty)}–${fmt(s.max * s.qty)} ₽`).join('\n') +
       `\nИтого ориентир: ${fmt(tot.min)}–${fmt(tot.max)} ₽`;
   };
-  send.addEventListener('click', () => {
+  send?.addEventListener('click', () => {
     const ta = $('#leadForm textarea[name="comment"]');
     const base = ta.value.replace(/\n*Смета с сайта:[\s\S]*$/, '').trim();
     ta.value = (base ? base + '\n\n' : '') + estimateText();
