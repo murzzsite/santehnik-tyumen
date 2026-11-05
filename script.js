@@ -1,4 +1,4 @@
-const YM_ID = 0; // номер счётчика Яндекс Метрики: вставить после создания счётчика
+const YM_ID = 114050264; // счётчик Яндекс Метрики
 const LEAD_ENDPOINT = 'https://lead-relay.leestygpt.workers.dev/lead/DWK7UWQMTC';
 
 (() => {
