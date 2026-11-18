@@ -3,22 +3,6 @@
   "updated": "2026-11-18",
   "awaiting": [
     {
-      "slug": "podvesnoy-ili-napolnyy-unitaz-chto-vybrat",
-      "path": "articles/podvesnoy-ili-napolnyy-unitaz-chto-vybrat.md",
-      "title": "Подвесной или напольный унитаз: что выбрать и сколько стоит установка в Тюмени",
-      "description": "Подвесной или напольный унитаз: чем отличаются, что дешевле в установке, какие плюсы и минусы. Цены монтажа в Тюмени из прайса Сантехник72.",
-      "reading_time": "9 мин чтения",
-      "preview_url": "https://santex.tech/blog/preview/db62d62fba4c/podvesnoy-ili-napolnyy-unitaz-chto-vybrat/"
-    },
-    {
-      "slug": "techet-voda-chto-delat-do-priezda-santehnika",
-      "path": "articles/techet-voda-chto-delat-do-priezda-santehnika.md",
-      "title": "Течёт вода: что делать до приезда сантехника в Тюмени",
-      "description": "Течёт кран, сифон или труба: как перекрыть воду, что сделать до приезда сантехника в Тюмени и сколько стоит устранение течи по прайсу.",
-      "reading_time": "9 мин чтения",
-      "preview_url": "https://santex.tech/blog/preview/30ab4b4bc057/techet-voda-chto-delat-do-priezda-santehnika/"
-    },
-    {
       "slug": "zasor-v-rakovine-chto-delat-tyumen",
       "path": "articles/zasor-v-rakovine-chto-delat-tyumen.md",
       "title": "Засор в раковине: что делать самому и когда вызывать сантехника в Тюмени",
@@ -27,8 +11,20 @@
       "preview_url": "https://santex.tech/blog/preview/33625f3faeda/zasor-v-rakovine-chto-delat-tyumen/"
     }
   ],
-  "scheduled": [],
+  "scheduled": [
+    {
+      "slug": "techet-voda-chto-delat-do-priezda-santehnika",
+      "title": "Течёт вода: что делать до приезда сантехника в Тюмени",
+      "date": "2026-11-25"
+    }
+  ],
   "published": [
+    {
+      "slug": "podvesnoy-ili-napolnyy-unitaz-chto-vybrat",
+      "title": "Подвесной или напольный унитаз: что выбрать и сколько стоит установка в Тюмени",
+      "url": "https://santex.tech/blog/podvesnoy-ili-napolnyy-unitaz-chto-vybrat/",
+      "date": "2026-11-18"
+    },
     {
       "slug": "skolko-stoit-vyzvat-santehnika-v-tyumeni",
       "title": "Сколько стоит вызвать сантехника в Тюмени и как не переплатить",
