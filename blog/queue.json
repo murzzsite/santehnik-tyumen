@@ -1,13 +1,8 @@
 {
   "site": "https://santex.tech",
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "awaiting": [],
   "scheduled": [
-    {
-      "slug": "techet-voda-chto-delat-do-priezda-santehnika",
-      "title": "Течёт вода: что делать до приезда сантехника в Тюмени",
-      "date": "2026-11-25"
-    },
     {
       "slug": "zasor-v-rakovine-chto-delat-tyumen",
       "title": "Засор в раковине: что делать самому и когда вызывать сантехника в Тюмени",
@@ -15,6 +10,12 @@
     }
   ],
   "published": [
+    {
+      "slug": "techet-voda-chto-delat-do-priezda-santehnika",
+      "title": "Течёт вода: что делать до приезда сантехника в Тюмени",
+      "url": "https://santex.tech/blog/techet-voda-chto-delat-do-priezda-santehnika/",
+      "date": "2026-11-25"
+    },
     {
       "slug": "podvesnoy-ili-napolnyy-unitaz-chto-vybrat",
       "title": "Подвесной или напольный унитаз: что выбрать и сколько стоит установка в Тюмени",
